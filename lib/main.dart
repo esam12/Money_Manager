@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:money_manager/utils/constants.dart';
 import 'package:money_manager/view/screens/main_screen_host.dart';
 
 void main() {
@@ -14,8 +15,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        appBarTheme: const AppBarTheme(backgroundColor: background),
+        brightness: Brightness.light,
       ),
       home: const MainScreenHost(),
     );
